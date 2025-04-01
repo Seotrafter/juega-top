@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>World of Kungfu: Dragon&Eagle</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="World of Kungfu: Dragon&Eagle - Un RPG de artes marciales con gráficos pixel-art. Explora la antigua China durante la dinastía Song del Sur, domina las artes marciales y vive tu sueño wuxia en esta épica aventura.">
+	<meta name="theme-color" content="#080912">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="World of Kungfu: Dragon&Eagle">
+	<meta property="og:description" content="¡Sumérgete en la antigua China! Explora la ciudad de Xiangyang, domina las artes marciales y vive una épica aventura wuxia en este fascinante RPG de pixel-art.">
+	<meta property="og:site_name" content="World of Kungfu: Dragon&Eagle">
+	<meta property="og:url" content="https://juega-top.com">
+	<meta property="og:type" content="website">
+	<link rel="canonical" href="https://juega-top.com/" />
+
+	<!-- Styles -->
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css?_v=20250120110803" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250120110803">
+
+	<!-- Favicon  -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<!-- Liquid button svg filter -->
+	<svg width="0" height="0" class="hidden">
+		<defs>
+			<filter id="buttonFilter">
+				<feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur">
+				</feGaussianBlur>
+				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 19 -9" result="buttonFilter"></feColorMatrix>
+				<feComposite in="SourceGraphic" in2="buttonFilter" operator="atop">
+				</feComposite>
+				<feBlend in="SourceGraphic" in2="buttonFilter"></feBlend>
+			</filter>
+		</defs>
+	</svg>
+
+	<!-- Preload critical assets -->
+	<link rel="preload" href="img/logo.webp" as="image">
+	<link rel="preload" href="files/hero.mp4" as="video" type="video/mp4">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="120" data-scroll-show class="header">
+			<div class="header__container">
+				<div class="header__wrapper">
+					<span></span>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="index.html#hero" class="menu__link">Inicio</a>
+								</li>
+								<li class="menu__item">
+									<a href="index.html#about" class="menu__link">Acerca de</a>
+								</li>
+								<li class="menu__item">
+									<a href="index.html#features" class="menu__link">Características</a>
+								</li>
+								<li class="menu__item">
+									<a href="index.html#platforms" class="menu__link">Galería</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions">
+						<button type="button" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero" id="hero">
+				<div class="hero__bg">
+					<div class="hero__overlay"></div>
+					<video class="hero__bg-video" autoplay muted loop playsinline poster="img/poster.webp">
+						<source src="files/hero.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="hero__content">
+					<div class="hero__text-container">
+						<h1 class="hero__title">World of Kungfu: Dragon&Eagle</h1>
+						<p class="hero__subtitle">
+							Las fuerzas sombrías han escapado y ocupado nuestro mundo. Nuestro cazador toma el poder del
+							Eterno Lado de la Luz y salva nuestro mundo.
+							Shadow Rival: Action War es un juego de rol de acción y fantasía oscura en el que usarás tus
+							habilidades de acuchillar y esquivar para luchar contra hordas de monstruos y demonios de
+							las sombras. Conviértete en un rival de la Sombra, elige a tu héroe entre diferentes clases,
+							cada una con sus mejores habilidades y destrezas únicas, y conviértete en un legendario
+							cazador de demonios.
+						</p>
+						<div class="hero__features">
+							<div class="hero__feature">
+								<i class="fa-solid fa-hand-fist hero__feature-icon"></i>
+								<span class="hero__feature-text">Artes Marciales</span>
+							</div>
+							<div class="hero__feature">
+								<i class="fas fa-dragon hero__feature-icon"></i>
+								<span class="hero__feature-text">Antigua China</span>
+							</div>
+							<div class="hero__feature">
+								<i class="fas fa-users hero__feature-icon"></i>
+								<span class="hero__feature-text">Estilos de Kung Fu</span>
+							</div>
+							<div class="hero__feature">
+								<i class="fas fa-yin-yang hero__feature-icon"></i>
+								<span class="hero__feature-text">Sistema de Cultivo</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="hero__actions">
+						<a href="#platforms" class="hero__button hero__button--primary">
+							<span>Jugar Ahora</span>
+							<i class="fas fa-gamepad"></i>
+						</a>
+						<a href="#trailer" class="hero__button hero__button--secondary">
+							<span>Ver Tráiler</span>
+							<i class="fas fa-play"></i>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="about" id="about">
+				<div class="about__container">
+					<div class="about__content">
+						<div class="about__header">
+							<h2>Explora las Profundidades</h2>
+							<span class="about__subtitle">Una Aventura de Fantasía Medieval Oscura</span>
+						</div>
+						<div class="about__grid">
+							<div class="about__info">
+								<div class="about__text-block">
+									<h3>La Aventura</h3>
+									<p>
+										Sumérgete en la antigua China durante la dinastía Song del Sur, donde las artes
+										marciales y la magia se entrelazan. Explora la majestuosa ciudad de Xiangyang y
+										sus
+										alrededores, mientras te conviertes en un legendario maestro de kung fu en esta
+										épica aventura wuxia.
+									</p>
+								</div>
+								<div class="about__text-block about__text-block--secondary">
+									<h3>El Desafío</h3>
+									<p>
+										Domina las antiguas técnicas de combate, aprende poderosos movimientos de kung
+										fu
+										y mejora tus habilidades en este fascinante RPG de pixel-art. Enfréntate a
+										desafiantes enemigos, descubre secretos ancestrales y forja tu propio camino
+										como maestro de las artes marciales.
+									</p>
+								</div>
+							</div>
+							<div class="about__stats">
+								<div class="about__stat about__stat--characters">
+									<div class="about__stat-content">
+										<div class="about__stat-number">
+											<span class="about__stat-value">30</span>
+											<span class="about__stat-plus">+</span>
+										</div>
+										<div class="about__stat-label">Hechizos</div>
+										<div class="about__stat-desc">para descubrir</div>
+									</div>
+									<div class="about__stat-icon">
+										<i class="fas fa-bolt"></i>
+									</div>
+								</div>
+								<div class="about__stat about__stat--bosses">
+									<div class="about__stat-content">
+										<div class="about__stat-number">
+											<span class="about__stat-value">5</span>
+										</div>
+										<div class="about__stat-label">Clases</div>
+										<div class="about__stat-desc">para jugar</div>
+									</div>
+									<div class="about__stat-icon">
+										<i class="fas fa-crown"></i>
+									</div>
+								</div>
+								<div class="about__stat about__stat--worlds">
+									<div class="about__stat-content">
+										<div class="about__stat-number">
+											<span class="about__stat-value">20</span>
+											<span class="about__stat-plus">+</span>
+										</div>
+										<div class="about__stat-label">Mazmorras</div>
+										<div class="about__stat-desc">por explorar</div>
+									</div>
+									<div class="about__stat-icon">
+										<i class="fas fa-globe"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="features" id="features">
+				<div class="features__container">
+					<div class="features__content">
+						<h2>Características Destacadas</h2>
+						<div class="features__grid">
+							<article class="features__item features__item--combat">
+								<div class="features__icon">
+									<i class="fa-solid fa-hand-fist"></i>
+								</div>
+								<div class="features__info">
+									<h3>Artes Marciales</h3>
+									<p>Sistema de combate <strong>dinámico</strong></p>
+									<span class="features__detail">Domina técnicas ancestrales de kung fu y combos
+										espectaculares</span>
+								</div>
+							</article>
+							<article class="features__item features__item--bosses">
+								<div class="features__icon">
+									<i class="fas fa-dragon"></i>
+								</div>
+								<div class="features__info">
+									<h3>Mundo Wuxia</h3>
+									<p>Ambientado en la <strong>antigua China</strong></p>
+									<span class="features__detail">Explora la majestuosa ciudad de Xiangyang durante
+										la dinastía Song</span>
+								</div>
+							</article>
+							<article class="features__item features__item--pvp">
+								<div class="features__icon">
+									<i class="fas fa-users"></i>
+								</div>
+								<div class="features__info">
+									<h3>Estilos de Lucha</h3>
+									<p>Diversos <strong>estilos de kung fu</strong></p>
+									<span class="features__detail">Aprende y personaliza diferentes estilos
+										de artes marciales</span>
+								</div>
+							</article>
+							<article class="features__item features__item--worlds">
+								<div class="features__icon">
+									<i class="fas fa-yin-yang"></i>
+								</div>
+								<div class="features__info">
+									<h3>Sistema de Cultivo</h3>
+									<p>Progresión RPG <strong>profunda</strong></p>
+									<span class="features__detail">Mejora tus habilidades y descubre el poder
+										del chi interior</span>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="gallery" id="gallery">
+				<div class="gallery__container">
+					<div class="gallery__content">
+						<h2>Galería de Capturas</h2>
+						<p>Explora el Mundo Místico de <strong>World of Kungfu: Dragon&Eagle</strong></p>
+					</div>
+					<div class="gallery__slider swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide gallery__slide">
+								<img src="img/screenshots/01.webp" alt="Combate de kung fu en World of Kungfu" />
+								<div class="gallery__slide-caption">Combate Dinámico</div>
+							</div>
+							<div class="swiper-slide gallery__slide">
+								<img src="img/screenshots/02.webp" alt="Ciudad de Xiangyang en World of Kungfu" />
+								<div class="gallery__slide-caption">Ciudad Ancestral</div>
+							</div>
+							<div class="swiper-slide gallery__slide">
+								<img src="img/screenshots/03.webp" alt="Entrenamiento de kung fu en World of Kungfu" />
+								<div class="gallery__slide-caption">Entrenamiento</div>
+							</div>
+							<div class="swiper-slide gallery__slide">
+								<img src="img/screenshots/04.webp" alt="Sistema de cultivo en World of Kungfu" />
+								<div class="gallery__slide-caption">Cultivo Interior</div>
+							</div>
+						</div>
+						<div class="gallery__navigation">
+							<button type="button" class="gallery__prev" aria-label="Anterior">
+								<i class="fa-solid fa-chevron-left"></i>
+							</button>
+							<div class="gallery__pagination"></div>
+							<button type="button" class="gallery__next" aria-label="Siguiente">
+								<i class="fa-solid fa-chevron-right"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="trailer" id="trailer" style="position: relative; 
+				background: url('img/poster.webp') center/cover no-repeat;">
+				<div class="trailer__overlay"></div>
+				<div class="trailer__container">
+					<div class="trailer__content">
+						<h2>¡Sobrevive y Conquista!</h2>
+						<p>Explora el intenso mundo de <strong>World of Kungfu</strong> en acción</p>
+						<div class="button button--light button--trailer" data-video-src="files/hero.mp4" data-video-popup-trigger>
+							<a class="button__title">
+								<span class="title-btn">
+									<span class="text-default">Ver tráiler</span>
+									<span class="text-hover">Ver tráiler</span>
+								</span>
+							</a>
+							<span class="button__icon">
+								<i class="fa-solid fa-play"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="platforms" id="platforms">
+				<div class="platforms__bg">
+					<div class="platforms__bg-gradient"></div>
+					<div class="platforms__bg-noise"></div>
+				</div>
+				<div class="platforms__container">
+					<div class="platforms__content">
+						<h2>¡Vive tu Sueño!</h2>
+						<p>Elige tu plataforma y sumérgete en el mundo de las artes marciales</p>
+					</div>
+					<div class="platforms__grid">
+						<div class="platforms__item">
+							<div class="platforms__icon">
+								<i class="fa-brands fa-android"></i>
+								<div class="platforms__icon-shine"></div>
+							</div>
+							<h3>Android</h3>
+							<p>Lleva la aventura contigo</p>
+							<div class="platforms__meta">
+								<span class="platforms__badge">Free</span>
+								<span class="platforms__rating">
+									<i class="fas fa-star"></i>
+									<span>4.0</span>
+								</span>
+							</div>
+							<a href="https://play.google.com/store/apps/details?id=com.chillyroom.worldofkungfu.gp" class="platforms__button" target="_blank">
+								<span>Descargar para Android</span>
+								<i class="fas fa-arrow-right"></i>
+							</a>
+						</div>
+						<div class="platforms__item">
+							<div class="platforms__icon">
+								<i class="fa-brands fa-apple"></i>
+								<div class="platforms__icon-shine"></div>
+							</div>
+							<h3>iOS</h3>
+							<p>Sumérgete en la oscuridad</p>
+							<div class="platforms__meta">
+								<span class="platforms__badge">Free</span>
+								<span class="platforms__rating">
+									<i class="fas fa-star"></i>
+									<span>4.1</span>
+								</span>
+							</div>
+							<a href="https://apps.apple.com/ua/app/world-of-kungfu-dragon-eagle/id6736354312" class="platforms__button" target="_blank">
+								<span>Descargar para iOS</span>
+								<i class="fas fa-arrow-right"></i>
+							</a>
+						</div>
+						<div class="platforms__item">
+							<div class="platforms__icon">
+								<i class="fa-brands fa-steam"></i>
+								<div class="platforms__icon-shine"></div>
+							</div>
+							<h3>Steam</h3>
+							<p>La experiencia completa</p>
+							<div class="platforms__meta">
+								<span class="platforms__badge">€7.99</span>
+								<span class="platforms__rating">
+									<i class="fas fa-star"></i>
+									<span>4.1</span>
+								</span>
+							</div>
+							<a href="https://store.steampowered.com/app/1407450/The_World_of_Kungfu_Dragon_and_Eagle" class="platforms__button" target="_blank">
+								<span>Descargar para Steam</span>
+								<i class="fas fa-arrow-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__content">
+					<div class="footer__column">
+						<div class="footer__logo">
+							<a href="index.html" class="footer__logo">
+								<img src="img/logo.webp" alt="World of Kungfu: Dragon&Eagle Logo">
+							</a>
+						</div>
+						<p class="footer__description">
+							World of Kungfu: Dragon&Eagle es un RPG de artes marciales con gráficos pixel-art ambientado en la
+							antigua China.
+							Explora la ciudad de Xiangyang, domina las artes marciales y vive una épica aventura wuxia llena de
+							acción y misterio.
+						</p>
+						<div class="footer__socials">
+							<a href="https://play.google.com/store/apps/details?id=com.chillyroom.worldofkungfu.gp" class="footer__social-link" target="_blank">
+								<i class="fa-brands fa-google-play"></i>
+							</a>
+							<a href="https://apps.apple.com/ua/app/world-of-kungfu-dragon-eagle/id6736354312" class="footer__social-link" target="_blank">
+								<i class="fa-brands fa-apple"></i>
+							</a>
+							<a href="https://store.steampowered.com/app/1407450/The_World_of_Kungfu_Dragon_and_Eagle" class="footer__social-link" target="_blank">
+								<i class="fa-brands fa-steam"></i>
+							</a>
+						</div>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Enlaces Rápidos</h3>
+						<ul class="footer__list">
+							<li><a href="index.html#hero" class="footer__link">Inicio</a></li>
+							<li><a href="index.html#about" class="footer__link">Acerca de</a></li>
+							<li><a href="index.html#features" class="footer__link">Características</a></li>
+							<li><a href="index.html#gallery" class="footer__link">Galería</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Legal</h3>
+						<ul class="footer__list">
+							<li><a href="privacy.html" class="footer__link">Política de Privacidad</a></li>
+							<li><a href="terms.html" class="footer__link">Términos de Servicio</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copyright">
+						<p>&copy; 2025 World of Kungfu: Dragon&Eagle by ChillyRoom. Todos los derechos reservados. <a href="https://juega-top.com">juega-top.com</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scroll to top button  -->
+		<button class="scroll-to-top" aria-label="Desplácese hacia arriba" style="--progress: 0deg">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+
+		<div id="cursor" class="ball"></div>
+		<div id="cursor_inner" class="ball"></div>
+		<!-- Video Popup -->
+		<div class="video-popup" data-video-popup>
+			<div class="video-popup__overlay" data-video-popup-overlay></div>
+			<div class="video-popup__content">
+				<div class="video-popup__player" data-video-popup-player>
+					<video controls preload="metadata">
+						<source type="video/mp4">
+					</video>
+				</div>
+				<button class="video-popup__close" data-video-popup-close>
+					<i class="fa-solid fa-times"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20250310121217"></script>
+</body>
+
+</html>
